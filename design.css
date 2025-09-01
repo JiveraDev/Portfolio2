@@ -5,6 +5,7 @@
 
 }
 .navbar{
+    margin-top: 0px;
     height: 50px ;
    background: linear-gradient(to bottom, #1b1b1b 0%, #1b1b1b 60%, #2c2c2c 100%);
 
@@ -151,5 +152,6 @@ body{
     .navbar-brand {
     display: none;
   }
+
 
 }
