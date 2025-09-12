@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailInput = document.getElementById("email");
   const phoneInput = document.getElementById("phone");
   const messageInput = document.getElementById("message");
-// 
+  // 
   const toastLiveExample = document.getElementById('liveToast');
   const toastBody = document.getElementById('toastcontent');
   const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
@@ -34,24 +34,24 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         // alert("✅ Message sent successfully!");
 
-      const userName = nameInput.value.trim() || "Guest";
-      toastBody.textContent = `Hello ${userName}, your message was sent!`;
+        const userName = nameInput.value.trim() || "Guest";
+        toastBody.textContent = `Hello ${userName}, your message was sent!`;
 
-      toastBootstrap.show();
-       console.log("✅ Toast should show now");
+        toastBootstrap.show();
+        console.log("✅ Toast should show now");
         form.reset();
       } else {
 
         // alert("❌ Error: Unable to send message.");
-      toastBody.textContent = `❌ Error: Unable to send message.`;
-      toastBootstrap.show();
-       console.log("✅ Toast should show now");
+        toastBody.textContent = `❌ Error: Unable to send message.`;
+        toastBootstrap.show();
+        console.log("✅ Toast should show now");
       }
     } catch (error) {
       // alert("⚠️ Network error. Please try again later.");
       toastBody.textContent = `⚠️ Network error. Please try again later.`;
       toastBootstrap.show();
-       console.log("✅ Toast should show now");
+      console.log("✅ Toast should show now");
     }
   });
 });

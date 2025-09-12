@@ -1,43 +1,34 @@
- document.getElementById('Resume').addEventListener('click', function() {
-        window.alert("Go to my Resume?");
-          });
-
+document.getElementById("Resume").addEventListener("click", function () {
+  window.alert("Go to my Resume?");
+});
 
 // animation for the Typewriting
 
-
-
-
-
 // modal
-const myModal = document.getElementById('modaldataCert')
+const myModal = document.getElementById("modaldataCert");
 
-myModal.addEventListener('shown.bs.modal', () => {
-
-})
-
+myModal.addEventListener("shown.bs.modal", () => {});
 
 document.addEventListener("DOMContentLoaded", function () {
   const modalImg = document.getElementById("imagecert");
 
-  document.querySelectorAll("[data-bs-target='#modaldataCert']").forEach(link => {
-    link.addEventListener("click", function () {
-      const imgPath = this.getAttribute("data-img");
-      if (modalImg) {
-        modalImg.setAttribute("src", imgPath);
-      } else {
-        console.error("certImage element not found!");
-      }
+  document
+    .querySelectorAll("[data-bs-target='#modaldataCert']")
+    .forEach((link) => {
+      link.addEventListener("click", function () {
+        const imgPath = this.getAttribute("data-img");
+        if (modalImg) {
+          modalImg.setAttribute("src", imgPath);
+        } else {
+          console.error("certImage element not found!");
+        }
+      });
     });
-  });
 });
 
-
-
-
-// typewriting animation 
-// animation for type writing 
- document.getElementById("typewriter").innerHTML = "";
+// typewriting animation
+// animation for type writing
+document.getElementById("typewriter").innerHTML = "";
 const text = "Information are just collection of data";
 const speed = 80; // typing speed in ms
 let i = 0;
